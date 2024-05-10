@@ -1,0 +1,17 @@
+.view-text {
+  color: #ec1c24;
+  text-decoration: none;
+}
+
+.icon-bg {
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 1.9rem;
+}
+
+.card {
+  margin-right: 30px;
+  min-width: 4.54545%;
+}/*# sourceMappingURL=custom.css.map */

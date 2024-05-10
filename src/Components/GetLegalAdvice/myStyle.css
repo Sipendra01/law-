@@ -1,0 +1,20 @@
+.bg-Top{
+    background-color: hsl(0, 0%, 15%);
+    /* background-size: cover; */
+    height: 424px;
+}
+.btn-white{
+    background-color: #fff;
+    color: #000;
+   border: none;
+}
+.btn-white:hover{
+    background: #dfdfe3 !important;
+    color: #0b0a12 !important;
+    border-color: #dfdfe3
+}
+.btn-primary:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: var( --bs-primary);
+    border-color: var(--bs-btn-hover-border-color);
+}

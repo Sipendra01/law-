@@ -1,0 +1,32 @@
+.text_gray{
+    color:#747579; 
+}
+.list-type{
+    list-style: none;
+}
+section {
+    padding-top: 3.5rem;
+    padding-bottom: 2.8rem;
+}
+.h2{
+    font-size: 3rem;
+}
+.h1{
+    font-size: 3.5rem;
+}
+.fs-13{
+    font-size: 13px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-16{
+    font-size: 16px;
+}
+.btn-lg {
+    --bs-btn-padding-y: 0.8rem;
+    --bs-btn-padding-x: 1.5rem;
+    --bs-btn-font-size: 1rem;
+    --bs-btn-border-radius: 1rem;
+}
+

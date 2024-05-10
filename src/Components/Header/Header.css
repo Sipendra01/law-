@@ -1,0 +1,43 @@
+.header-menu {
+  font-size: 16px;
+  height: 72px;
+}
+.social-links {
+  list-style-type: none;
+}
+.social-links li {
+  padding-right: 10px;
+}
+.social-links li:hover {
+  color: #ec1c24;
+}
+.dropdownbutton {
+  margin: 0px;
+  cursor: pointer;
+}
+.dropdownbutton:hover{
+  color: #ec1c24;
+}
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 45;
+  /* z-index: 999; */
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  /* padding: 10px; */
+}
+
+/* Style for mega menu links */
+.mega-menu a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Style for mega menu links on hover */
+.mega-menu a:hover {
+  background-color: #f0f0f0;
+}
