@@ -49,42 +49,43 @@ const Login = ({ setUserState }) => {
         alert(res.data.message);
         setUserState(res.data.user);
         if (res.data.success === true) {
-          localStorage.setItem("user", JSON.stringify(res.data.data))
+          localStorage.setItem("user", JSON.stringify(res.data.data));
           navigate("/", { replace: true });
           window.location.reload();
         }
-
       });
     }
   }, [formErrors]);
 
   return (
-    <div className={loginstyle.login}>
-      <form>
-        <h1>Login</h1>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Email"
-          onChange={changeHandler}
-          value={user.email}
-        />
-        <p className={basestyle.error}>{formErrors.email}</p>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          placeholder="Password"
-          onChange={changeHandler}
-          value={user.password}
-        />
-        <p className={basestyle.error}>{formErrors.password}</p>
-        <button className={basestyle.button_common} onClick={loginHandler}>
-          Login
-        </button>
-      </form>
-      <NavLink to="/signup">Not yet registered? Register Now</NavLink>
+    <div className="d-flex justify-content-center align-items-center">
+      <div className={loginstyle.login}>
+        <form>
+          <h1>Login</h1>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            onChange={changeHandler}
+            value={user.email}
+          />
+          <p className={basestyle.error}>{formErrors.email}</p>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            onChange={changeHandler}
+            value={user.password}
+          />
+          <p className={basestyle.error}>{formErrors.password}</p>
+          <button className={basestyle.button_common} onClick={loginHandler}>
+            Login
+          </button>
+        </form>
+        <NavLink to="/signup">Not yet registered? Register Now</NavLink>
+      </div>
     </div>
   );
 };

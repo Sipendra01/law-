@@ -1,6 +1,11 @@
 import "./App.css";
 import Header from "./Components/Header/Header";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useParams,
+} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Footer from "./Components/Footer/Footer";
@@ -11,10 +16,13 @@ import "./global.css";
 import OurServices from "./Components/Services";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-//import "../public/assets/scss/custom.css";
+import "../src/Components/custom.css";
 import { useState } from "react";
+
 function App() {
   const [userstate, setUserState] = useState({});
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   return (
     <Router>
       <Header />
@@ -35,14 +43,13 @@ function App() {
                   username={userstate.fname}
                 />
               ) : (
-                <Login setUserState={setUserState} />
+                <Login setUserState={setUserState} setIsLoggedIn={setIsLoggedIn} />
               )
             }
           ></Route>
         </Routes>
-
-
       </div>
+      {/* !{isLoggedIn && <Footer />} */}
       <Footer />
     </Router>
   );

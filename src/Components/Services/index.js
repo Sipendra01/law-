@@ -5,37 +5,46 @@ import CardComponent from "../../Common/CardComponent";
 import WhyLeadIndia from "../whyLead";
 import Serving from "../Serving";
 import GetAdvice from "../GetLegalAdvice";
+import AskQuestions from "../AskQuestion";
 
 const AccordionData = [
   {
     id: 1,
-    title: "Accordion Item 1",
+    title: "Court Marriage",
     content: "Content for Accordion Item 1",
     icon: "bi bi-file-earmark-richtext-fill",
     link:"/"
   },
   {
     id: 2,
-    title: "Accordion Item 2",
+    title: "Bail Matters",
     content: "Content for Accordion Item 2",
     icon: "bi bi-file-earmark-pdf-fill", 
     link:"/"
   },
   {
     id: 3,
-    title: "Accordion Item 2",
+    title: "Legal Notice",
     content: "Content for Accordion Item 2",
-    icon: "bi bi-file-earmark-pdf-fill", // Icon for Accordion Item 2
+    icon: "bi bi-file-earmark-pdf-fill", 
     link:"/"
   },
   {
     id: 4,
-    title: "Accordion Item 2",
+    title: "Cheque Bounce",
     content: "Content for Accordion Item 2",
-    icon: "bi bi-file-earmark-pdf-fill", // Icon for Accordion Item 2
+    icon: "bi bi-file-earmark-pdf-fill",
+    link:"/"
+  },
+  {
+    id: 5,
+    title: "GST Registration",
+    content: "Content for Accordion Item 2",
+    icon: "bi bi-file-earmark-pdf-fill",
     link:"/"
   },
 ];
+
 
 const OurServices = () => {
   const settings = {
@@ -91,6 +100,7 @@ const OurServices = () => {
           </Col>
         </Container>
       </section>
+      <AskQuestions/>
       <WhyLeadIndia />
       <Serving />
     </>
