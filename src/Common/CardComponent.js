@@ -9,7 +9,7 @@ const CardComponent = ({ imgSrc, cardLink, title, content, link }) => {
           <i className={imgSrc}></i>
         </div>
         <h6>
-          <Link href={cardLink} className="linkStyle" passhref>
+          <Link href={cardLink} className="linkStyle link-color" passhref>
             {title}
           </Link>
         </h6>

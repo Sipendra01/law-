@@ -3,11 +3,29 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const AskQuestions = () => {
-  const Data = [{
-    id:1,
-    title:"",
-    
-  }]
+  const Data = [
+    {
+      id: 1,
+      ques: "Hello, Recently one of my employee has joined our company. A...",
+      ans: "Sir, if the employee is not ready for the PF deduction in her salary; she should give it in writt...... ",
+      link: "/",
+    },
+    {
+      id: 2,
+      ques: "Hello, Recently one of my employee has joined our company. A...",
+      ans: "Sir, if the employee is not ready for the PF deduction in her salary; she should give it in writt...... ",
+    },
+    {
+      id: 3,
+      ques: "Hello, Recently one of my employee has joined our company. A...",
+      ans: "Sir, if the employee is not ready for the PF deduction in her salary; she should give it in writt...... ",
+    },
+    {
+      id: 4,
+      ques: "Hello, Recently one of my employee has joined our company. A...",
+      ans: "Sir, if the employee is not ready for the PF deduction in her salary; she should give it in writt...... ",
+    },
+  ];
 
   return (
     <section>
@@ -30,8 +48,32 @@ const AskQuestions = () => {
             <Row className="g-4 align-items-center">
               {Data?.map((item, index) => {
                 return (
-                  <Col md={6}></Col>
-                )
+                  <Col md={6}>
+                    <div className="card-body h-100 p-3 border bg-light rounded-3">
+                      <div className="d-flex justify-content-between align-items-center">
+                        <div className="ms-0">
+                          <h6 className="mb-2">
+                            Q-{" "}
+                            <Link
+                              href={item?.link}
+                              className="linkStyle link-color"
+                              passHref
+                            >
+                              {item?.ques}
+                            </Link>
+                          </h6>
+                          <p className="mb-0">
+                            <b>Ans- </b>
+                          </p>
+                          <p>{item?.ans}</p>
+                        </div>
+                        <Link href={item?.link} className="ms-2 btn btn-round btn-primary-soft">
+                          <i className="bi bi-arrow-right h6"></i>
+                        </Link>
+                      </div>
+                    </div>
+                  </Col>
+                );
               })}
             </Row>
           </Col>

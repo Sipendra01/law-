@@ -114,8 +114,9 @@ const Header = () => {
             <img
               src="/assets/images/logo.png"
               alt=""
-              width="100px"
-              height={"100px"}
+              width="70px"
+              height={"70px"}
+              className="rounded"
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
