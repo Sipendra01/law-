@@ -1,32 +1,57 @@
-.text_gray{
-    color:#747579; 
+.text_gray {
+  color: #747579;
 }
-.list-type{
-    list-style: none;
+.list-type {
+  list-style: none;
 }
 section {
-    padding-top: 3.5rem;
-    padding-bottom: 2.8rem;
+  padding-top: 3.5rem;
+  padding-bottom: 2.8rem;
 }
-.h2{
-    font-size: 3rem;
+.h2 {
+  font-size: 3rem;
 }
-.h1{
-    font-size: 3.5rem;
+.h1 {
+  font-size: 3.5rem;
 }
-.fs-13{
-    font-size: 13px;
+.fs-13 {
+  font-size: 13px;
 }
-.fs-14{
-    font-size: 14px;
+.fs-14 {
+  font-size: 14px;
 }
-.fs-16{
-    font-size: 16px;
+.fs-16 {
+  font-size: 16px;
 }
-.btn-lg {
-    --bs-btn-padding-y: 0.8rem;
-    --bs-btn-padding-x: 1.5rem;
-    --bs-btn-font-size: 1rem;
-    --bs-btn-border-radius: 1rem;
+.fontweight_500 {
+  font-weight: 500;
+}
+.fontweight_700 {
+  font-weight: 700;
+}
+.lh_125 {
+  line-height: 1.25;
 }
 
+.btn-lg {
+  --bs-btn-padding-y: 0.8rem;
+  --bs-btn-padding-x: 1.5rem;
+  --bs-btn-font-size: 1rem;
+  --bs-btn-border-radius: 1rem;
+}
+.btn-outline-primary {
+    --bs-btn-color: #ec1c24;
+    --bs-btn-border-color: #ec1c24;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #ec1c24;
+    --bs-btn-hover-border-color: #ec1c24;
+    --bs-btn-focus-shadow-rgb: 81, 67, 217;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #ec1c24;
+    --bs-btn-active-border-color: #ec1c24;
+    --bs-btn-active-shadow: none;
+    --bs-btn-disabled-color: #ec1c24;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #ec1c24;
+    --bs-gradient: none;
+}
